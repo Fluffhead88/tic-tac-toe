@@ -1,54 +1,46 @@
 
 
+"""class TicTac:
+
+    def __init__(self):
+        self.mark = None
+
+    def filled(self):
+        self.mark = 1
+
+    def empty(self):
+        self.mark = 0
+
+    def __repr__(self):
+        if self.mark == 1:
+            return "X"
+        else:
+            return " " """
+
 class Board:
-    def __init__(self):
-        self.space = [" "," "," "," "," "," "," "," "," "," "]
+    def __init__(self, size = 3):
+        self.board = []
 
-    def draw(self):
-        print (self.space[1], " |", self.space[2], "|", self.space[3])
-        print ("---+---+---")
-        print (self.space[4], " |", self.space[4], "|", self.space[4])
-        print ("---+---+---")
-        print (self.space[7], " |", self.space[8], "|", self.space[9])
+        for _ in range(3):
+            self.board.append(["_"] * 3)
 
-    def free_space(self):
-        if self.space == " ":
-            return True
+    def printboard(self):
+        for row in self.board:
+            print (row)
 
-    def move(self):
-        print("Choose a place between 1-9 > ")
-        place = int(input())
-        self.space.append(place)
-        return place
-    
+
+    """def player_turn(self):
+        turn = input()
+        x[]
+
+
+
     def win(self):
-        possible_wins = ([1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [3,5,7])
-
-"""class Player:
-    def __init__(self):
-
-            place = int(input("Pick a spot on the board between 1-9 > "))
-            self.space.append(place)
-        return place"""
+        if "X" in (row[0] and row[1] and row[2]:
+            print "X win's" """
 
 
 
-
-
-
-"""def make_move(self):
-    player = input(int())
-    if self.space = " "
-        self.space.append(player)"""
-
-
-
-
-
-
-#x_move = int(input("Please choose a space number. > "))
-
-
-board = Board()
-board.draw()
-board.move()
+#player_turn()
+x = Board()
+print(x.printboard())
