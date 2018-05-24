@@ -24,23 +24,56 @@ class Board:
         for _ in range(3):
             self.board.append(["_"] * 3)
 
-    def printboard(self):
+    def print_board(self):
         for row in self.board:
             print (row)
 
 
-    """def player_turn(self):
-        turn = input()
-        x[]
+    def x_player_turn(self):
+        mark = "X"
+        mark = input("Please choose a place: ")
+        position = (index(mark))
+        if self.board[] == "_":
+            self.board.append(position)
+        else:
+            print("invalid move")
+        print (self.board)
+
+    def O_player_turn(self):
+        mark = "O"
+        mark = input("Please choose a place: ")
+        position = (index(mark))
+        if self.board[] == "_":
+            self.board.append(position)
+        else:
+            print("invalid move")
+        print (self.board)
 
 
 
-    def win(self):
-        if "X" in (row[0] and row[1] and row[2]:
-            print "X win's" """
+
+    def x_win(self):
+        if "X" in ([0,0] and [0,1] and [0,2]:
+        if "X" in ([1,0] and [1,1] and [1,2]:
+        if "X" in ([2,0] and [2,1] and [2,2]:
+        if "X" in ([0,0] and [1,0] and [2,0]:
+        if "X" in ([1,0] and [1,1] and [2,1]:
+        if "X" in ([2,0] and [2,1] and [2,2]:
+            print ("X wins")
+
+    def y_win(self):
+        if "O" in ([0,0] and [0,1] and [0,2]:
+        if "O" in ([1,0] and [1,1] and [1,2]:
+        if "O" in ([2,0] and [2,1] and [2,2]:
+        if "O" in ([0,0] and [1,0] and [2,0]:
+        if "O" in ([1,0] and [1,1] and [2,1]:
+        if "O" in ([2,0] and [2,1] and [2,2]:
+            print ("O wins")
 
 
 
-#player_turn()
+
+
+
 x = Board()
-print(x.printboard())
+print(x.print_board()
