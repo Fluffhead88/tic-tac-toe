@@ -28,52 +28,46 @@ class Board:
         for row in self.board:
             print (row)
 
+    def play(self):
+        players = ["X", "Y"]
+        #game_active = True
+        #while True:
+        for current_player in players:
+            print(f"{current_player}'s turn")
+            x = input()
+            self.board.append(players)
+            return self.board
 
-    def x_player_turn(self):
-        mark = "X"
-        mark = input("Please choose a place: ")
-        position = (index(mark))
-        if self.board[] == "_":
-            self.board.append(position)
-        else:
-            print("invalid move")
-        print (self.board)
 
-    def O_player_turn(self):
-        mark = "O"
-        mark = input("Please choose a place: ")
-        position = (index(mark))
-        if self.board[] == "_":
-            self.board.append(position)
-        else:
-            print("invalid move")
-        print (self.board)
+
+
+
+
 
 
 
 
     def x_win(self):
-        if "X" in ([0,0] and [0,1] and [0,2]:
-        if "X" in ([1,0] and [1,1] and [1,2]:
-        if "X" in ([2,0] and [2,1] and [2,2]:
-        if "X" in ([0,0] and [1,0] and [2,0]:
-        if "X" in ([1,0] and [1,1] and [2,1]:
-        if "X" in ([2,0] and [2,1] and [2,2]:
+        if "X" in ([0],[0]) and ([0],[1]) and ([0],[2]):
+            """elif "X" in ([1,0] and [1,1] and [1,2]):
+            elif "X" in ([2,0] and [2,1] and [2,2]):
+            elif "X" in ([0,0] and [1,0] and [2,0]):
+            elif "X" in ([1,0] and [1,1] and [2,1]):
+            elif "X" in ([2,0] and [2,1] and [2,2]):"""
             print ("X wins")
 
-    def y_win(self):
-        if "O" in ([0,0] and [0,1] and [0,2]:
-        if "O" in ([1,0] and [1,1] and [1,2]:
-        if "O" in ([2,0] and [2,1] and [2,2]:
-        if "O" in ([0,0] and [1,0] and [2,0]:
-        if "O" in ([1,0] and [1,1] and [2,1]:
-        if "O" in ([2,0] and [2,1] and [2,2]:
-            print ("O wins")
-
-
-
+    """def y_win(self):
+        if "O" in ([0,0] and [0,1] and [0,2]):
+            elif "O" in ([1,0] and [1,1] and [1,2]):
+            elif "O" in ([2,0] and [2,1] and [2,2]):
+            elif "O" in ([0,0] and [1,0] and [2,0]):
+            elif "O" in ([1,0] and [1,1] and [2,1]):
+            elif "O" in ([2,0] and [2,1] and [2,2]):
+            print ("O wins")"""
 
 
 
 x = Board()
-print(x.print_board()
+print(x.print_board())
+x.play()
+print(x.print_board())
